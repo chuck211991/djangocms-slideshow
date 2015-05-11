@@ -34,7 +34,7 @@ setup(
     license = "GNU",
     keywords = ["slideshow", "django", "cms", "plugin"],
     url = "https://github.com/urga/djangocms-slideshow",
-    packages=['slideshow', 'slideshow.migrations', ],
+    packages=['slideshow', 'slideshow.south_migrations', ],
     install_requires=INSTALL_REQUIRES,
     classifiers=CLASSIFIERS,
     long_description=read('README.md'),
