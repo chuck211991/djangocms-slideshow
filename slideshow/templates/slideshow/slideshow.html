@@ -6,9 +6,9 @@
 		<li>
 			<figure>
 				{% if image.url %}
-                    <a href="{{ image.url }}"><img src="{{ PUBLIC_URL }}{% thumbnail image.image 1170x500 upscale crop %}" alt="{{ image.name }}" /></a>
+                    <a href="{{ image.url }}"><img src="{{ PUBLIC_URL }}{% thumbnail image.image '1170x500' upscale=True crop=True %}" alt="{{ image.name }}" /></a>
                 {% else %}
-                    <img src="{{ PUBLIC_URL }}{% thumbnail image.image 1170x500 upscale crop %}" alt="{{ image.name }}" />
+                    <img src="{{ PUBLIC_URL }}{% thumbnail image.image '1170x500' upscale=True crop=True %}" alt="{{ image.name }}" />
                 {% endif %}
 			</figure>
 		</li>
